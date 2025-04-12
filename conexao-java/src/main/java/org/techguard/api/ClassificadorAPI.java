@@ -23,7 +23,7 @@ public class ClassificadorAPI {
     }
 
     public String classificar(String termo, String categoria) throws IOException, InterruptedException {
-        String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAzB0MJCPbIT9wyX69NbqkIIO7okm5HRgk";
+        String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=";
         String prompt = gerarPrompt(termo, categoria);
         String jsonInputString = String.format("{\"contents\":[{\"parts\":[{\"text\":\"%s\"}]}]}", prompt);
         LOGGER.info("Chamando API para classificar termo '{}' na categoria '{}'. URL: {}", termo, categoria, endpoint);
