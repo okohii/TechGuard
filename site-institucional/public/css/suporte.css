@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Nerko+One&display=swap');
+
+* {
+    padding: 0;
+}
+
+p {
+    margin: 15px;
+}
+
+body {
+    background-color: #1f2a3c;
+}
+
+.suporte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    color: white;
+}
+
+.firsts-holders{
+    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.infos-nome {
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    color: black;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.first-label {
+    padding: 20px;
+}
+
+.first-label input {
+    width: 260px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.second-label {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-label select {
+    width: 280px;
+    height: 54px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.suporte textarea {
+    width: 665px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 15px;
+    resize: none;
+    text-align: start;
+    padding: 10px;
+}
+
+.botao {
+    margin-left: 36%;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #4ADC7C;
+    color: #131820;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.botao:hover {
+    background-color: #189704; 
+  }

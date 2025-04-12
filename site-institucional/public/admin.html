@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="assets/Logo - TechGuard 1.png">
+    <link rel="stylesheet" href="./components/menu_admin.css">
+    <script src="./components/menu_admin.js"></script>
+    <script src="./js/redirecionamento.js"></script>
+</head>
+<body onload="estarLogado()">
+    
+    
+    <section class="main">
+        <div class="container">
+            <section class="hello">
+                <img src="./assets/foto-perfil.png" alt="" width="300px">
+                <!-- <img src="./assets/png-no-photo.png" alt="" width="300px"> -->
+                <h2 id="bemvindoUser"></h2>
+                <h3>Este é o seu painel, aproveite!</h3>
+                <h4>Algumas das funcionalidades que você pode utilizar:</h4>
+                <div class="icons-admin">
+                    <div class="menu-item">
+                        <span class="material-symbols-outlined" onclick="window.location.href='dashboard.html'">bar_chart</span>
+                        <div class="tooltip">Gráficos</div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="material-symbols-outlined" onclick="window.location.href='chat.html'">forum</span>
+                        <div class="tooltip">Chat com IA</div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="material-symbols-outlined" onclick="redirecionamentoCrud()">supervisor_account</span>
+                        <div class="tooltip">Administração</div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="material-symbols-outlined" onclick="window.location.href='suporte.html'">help</span>
+                        <div class="tooltip">Ajuda</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
+
+<script>
+
+bemvindoUser.innerHTML = `Bem vindo, ${sessionStorage.nomeUsuario}!`;
+
+
+
+
+</script>

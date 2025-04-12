@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>TechGuard Solutions</title>
+    <link rel="icon" href="assets/Logo - TechGuard 1.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+    <!-- API GOOGLE FONTS -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- FIM API GOOGLE FONTS -->
+
+</head>
+<body>
+    
+    <span class="material-symbols-outlined" style="font-size: 48px;" onclick="window.location.href='index.html'">arrow_circle_left</span>
+
+    <section class="section-initial-texts">
+        <h1>TECHGUARD</h1>
+        <p>SOLUTIONS</p>
+    </section>
+
+    <section class="section-login">
+        <div class="login">
+            <p class="principal-login">LOGIN</p>
+
+            <div class="login-fields">
+                <p>Email:</p>
+                <input type="email" autocomplete="off" id="campoEmail">
+
+                <p>Senha:</p>
+                <input type="password" autocomplete="off" id="campoSenha">
+            </div>
+
+            <div class="buttons-field">
+                <button onclick="autenticar()">Login</button>
+                <a href="cadastro.html">Não tem uma conta?</a>
+            </div>
+           
+        </div>
+
+    </section>
+
+</body>
+</html>

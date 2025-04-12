@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGuard Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/Logo - TechGuard 1.png">
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <div class="navbar">
+            <img src="assets/Logo - TechGuard 1.png" alt="">
+                <div class="texto-login">
+                    <div class="login">
+                        <p>Faça o seu login para acessar:</p>
+                    </div>
+                    <div class="pergunta-conta">
+                        <button onclick="login()">Entrar</button></a>
+                    </div>
+                </div>
+        </div>
+
+        <p class="antecipe-ataques">ANTECIPE ATAQUES E MELHORE SUA DEFESA.</p>
+
+        <div class="cards">
+            <div class="cards-1F">
+                <p class="titulo-1F">SOBRE NÓS</p>
+                <p class="paragrafo-1F">Na TechGuard Solutions, nossa missão é ajudar a proteger sua empresa contra
+                    ataques
+                    cibernéticos. Utilizamos base de dados para analisar ataques cibernéticos passados. Com base nessas
+                    análises, fornecemos sugestões para prevenir que sua empresa seja alvo desses ataques no futuro.
+                </p>
+                <div class="botoes">
+                    <button class="botoes-1F" onclick="abrir()">Saiba mais</button>
+                    <button class="botoes-1F" onclick="abrirContato()">Contato</button>
+                </div>
+            </div>
+
+            <div class="cards-1F">
+                <p class="titulo-1F">SERVIÇOS</p>
+                <p class="paragrafo-1F">Na TechGuard Solutions, oferecemos serviços de cibersegurança que analisam dados
+                    históricos para identificar ameaças e fornecer recomendações personalizadas, ajudando a fortalecer a
+                    defesa digital da sua empresa contra futuros ataques.</p>
+                    <div class="botoes">
+                        <button class="botoes-1F" onclick="abrirServicos()">Saiba mais</button>
+                    </div>
+            </div>
+            <div class="cards-1F">
+                <p class="titulo-1F">COMO FUNCIONA</p>
+                <p class="paragrafo-1F">
+                    Na TechGuard Solutions, analisamos dados históricos de cibersegurança para identificar padrões de
+                    ameaças e vulnerabilidades. Com base nessa análise, oferecemos sugestões personalizadas para
+                    prevenir
+                    futuros ataques e fortalecer a defesa digital da sua empresa.</p>
+                    <div class="botoes">
+                        <button class="botoes-1F" onclick="abrirComoFunciona()">Saiba mais</button>
+                    </div>
+            </div>
+        </div>
+
+        <section id="contato" style="display: none;">
+            <h1>CONTATO</h1>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="text" name="name" placeholder="Nome" class="inputForm" autocomplete="off">
+                <input type="text" name="email" placeholder="Email" class="inputForm" autocomplete="off">
+                <textarea name="message" class="inputTextArea" placeholder="Mensagem" autocomplete="off"></textarea>
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="accessKey" value="982d06b1-f682-4a60-b757-75b3c052bfdb" style="display: none;">
+                <input type="hidden" name="redirectTo" value="http://localhost:3333/index.html">
+                <input type="submit" value="ENVIAR" class="botoes-1F"/>
+            </form>
+        </section>
+        <div>
+            <img src="assets/circulo.png" alt="Circulo pulsante" class="circulo">
+        </div>
+
+        <footer>
+            <p>© 2024 TECHGUARD SOLUTIONS.</p>
+        </footer>
+    </div>
+    
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-superior">
+            <p class="titulo-1F">SOBRE NÓS</p>
+            <div class="fechar">
+                <p onclick="fechar()">x</p>
+            </div>
+        </div>
+        <div class="texto-popup">
+            <p>Na <span style= "color: #4ADC7C">TechGuard Solutions</span>, temos como principal missão <span style= "color: #4ADC7C">proteger sua empresa</span> contra ameaças e <span style= "color: #4ADC7C">ataques cibernéticos</span>. Para isso, utilizamos uma <span style= "color: #4ADC7C">base de dados</span> ampla e robusta que nos permite analisar minuciosamente incidentes passados. Ao estudar esses ataques em profundidade, conseguimos identificar <span style= "color: #4ADC7C">padrões de comportamento</span> e vulnerabilidades específicas que podem expor sua empresa a riscos potenciais. Com essas informações detalhadas, desenvolvemos <span style= "color: #4ADC7C">recomendações estratégicas</span> e personalizadas para aumentar suas defesas e evitar que sua empresa se torne alvo de ameaças semelhantes no futuro.</p>
+        </div>
+        
+    </div>
+    <div id="popupServicos" class="popup" style="display: none;">
+        <div class="popup-superior"> 
+            <p class="titulo-1F">SERVIÇOS</p>
+            <div class="fechar">
+                <p onclick="fecharServicos()">x</p>
+            </div>
+        </div>
+        <div class="texto-popup" id="texto-popup-servicos">
+            <p>Na <span style= "color: #4ADC7C">TechGuard Solutions</span>, nossos serviços de <span style= "color: #4ADC7C">cibersegurança</span> são projetados para proteger sua empresa de <span style= "color: #4ADC7C">ameaças cibernéticas</span> de forma eficaz e personalizada. Analisamos <span style= "color: #4ADC7C">dados históricos</span> de ataques para <span style= "color: #4ADC7C">identificar padrões, vulnerabilidades e possíveis riscos</span> específicos para o seu negócio. A partir dessa análise detalhada, desenvolvemos <span style= "color: #4ADC7C">recomendações</span> sob medida que ajudam a fortalecer suas defesas digitais. Nosso foco é garantir que sua empresa esteja preparada para <span style= "color: #4ADC7C">prevenir e mitigar futuros ataques</span>, oferecendo uma <span style= "color: #4ADC7C">proteção contínua</span> e adaptada às suas necessidades, sempre com uma abordagem proativa e eficaz.</p>
+        </div>
+        
+    </div>
+    <div id="popupComoFunciona" class="popup" style="display: none;">
+        <div class="popup-superior">
+            <p class="titulo-1F">COMO FUNCIONA</p>
+            <div class="fechar">
+                <p onclick="fecharComoFunciona()">x</p>
+            </div>
+        </div>
+        <div class="texto-popup" id="texto-popup-comoFunciona">
+            <p>Na <span style= "color: #4ADC7C">TechGuard Solutions</span>, nossa abordagem de <span style= "color: #4ADC7C">cibersegurança</span> começa com uma <span style= "color: #4ADC7C">análise aprofundada</span> de dados históricos de ataques e ameaças digitais. Executamos uma <span style= "color: #4ADC7C"></span>análise desses incidentes</span> para identificar <span style= "color: #4ADC7C">padrões de comportamento e vulnerabilidades</span> que possam representar <span style= "color: #4ADC7C">riscos específicos</span> para sua empresa. A partir dessa <span style= "color: #4ADC7C">análise criteriosa</span>, desenvolvemos <span style= "color: #4ADC7C">recomendações personalizadas</span> que vão além de soluções genéricas, visando <span style= "color: #4ADC7C">prevenir futuros ataques</span> de forma proativa. Nosso objetivo é <span style= "color: #4ADC7C">fortalecer sua defesa</span> digital, garantindo uma <span style= "color: #4ADC7C">proteção contínua</span> e adaptada às necessidades e ao perfil da sua organização.
+            </p>
+        </div>
+        
+    </div>
+</body>
+
+</html>
